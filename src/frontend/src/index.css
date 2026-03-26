@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* App canvas: warm off-white with a hint of saffron */
+    --background: 0.975 0.008 60;
+    /* Text primary: deep warm charcoal */
+    --foreground: 0.16 0.018 50;
+    /* Cards: soft warm white */
+    --card: 0.995 0.004 60;
+    --card-foreground: 0.16 0.018 50;
+    --popover: 0.995 0.004 60;
+    --popover-foreground: 0.16 0.018 50;
+    /* Primary brand: deep saffron #D4600A */
+    --primary: 0.58 0.175 44;
+    --primary-foreground: 1 0 0;
+    /* Secondary */
+    --secondary: 0.95 0.012 55;
+    --secondary-foreground: 0.16 0.018 50;
+    /* Muted */
+    --muted: 0.95 0.008 55;
+    --muted-foreground: 0.52 0.012 50;
+    /* Accent: light saffron tint */
+    --accent: 0.955 0.022 55;
+    --accent-foreground: 0.58 0.175 44;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    /* Success: India green */
+    --success: 0.5 0.14 155;
+    --success-foreground: 1 0 0;
+    /* Warning */
+    --warning: 0.68 0.15 62;
+    --warning-foreground: 0.16 0.018 50;
+    /* Border */
+    --border: 0.91 0.01 55;
+    --input: 0.91 0.01 55;
+    --ring: 0.58 0.175 44;
+    /* Charts */
+    --chart-1: 0.58 0.175 44;
+    --chart-2: 0.5 0.14 155;
+    --chart-3: 0.68 0.15 62;
+    --chart-4: 0.577 0.245 27.325;
+    --chart-5: 0.6 0.12 200;
+    /* Sidebar */
+    --sidebar: 0.995 0.004 60;
+    --sidebar-foreground: 0.16 0.018 50;
+    --sidebar-primary: 0.58 0.175 44;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.955 0.022 55;
+    --sidebar-accent-foreground: 0.58 0.175 44;
+    --sidebar-border: 0.91 0.01 55;
+    --sidebar-ring: 0.58 0.175 44;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
